@@ -35,7 +35,7 @@ Building a basic cart management, item listing, filtering, sorting system where 
 You can see the project's online demo from the following link :
 
 ```
-https://getir-assignment-utku-alavanda.herokuapp.com/
+https://getir-utku-alavanda.herokuapp.com/
 ```
 
 ## Running The Application
