@@ -1,0 +1,198 @@
+.home-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  .filter-sort-container {
+    width: 25%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    .filter-sort-element {
+      margin-bottom: 20px;
+
+      .filter-sort-header {
+        color: #697488;
+        margin-bottom: 10px;
+      }
+
+      .filter-sort-options-container {
+        background-color: $color-white;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 20px;
+        box-shadow: 0px 6px 24px rgba(93, 62, 188, 0.04);
+        border-radius: 2px;
+
+        .filter-search {
+          margin-bottom: 10px;
+        }
+
+        .filter-sort-options {
+          max-height: 150px;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+
+  .products-container {
+    width: 50%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    .products-header {
+      font-size: 26px;
+      color: #697488;
+      line-height: 1;
+    }
+
+    .tab-container {
+      margin: 16px 0;
+      display: flex;
+      gap: 10px;
+
+      .tab-element {
+        color: $color-blue;
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-block;
+        padding: 6px 16px;
+        background-color: #f2f0fd;
+        border-radius: 2px;
+
+        &.active {
+          color: #f2f0fd;
+          background-color: $color-blue;
+        }
+      }
+    }
+
+    .product-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 16px;
+      padding: 20px 20px 50px 20px;
+      background-color: $color-white;
+      margin-bottom: 20px;
+
+      .product-list-element {
+        width: calc(100% * (1 / 4) - 12px);
+        display: inline-block;
+        position: relative;
+
+        button {
+          height: 22px;
+          text-transform: capitalize;
+          background-color: $color-blue;
+          border-radius: 2px;
+          position: absolute;
+          bottom: -25px;
+        }
+
+        .product-image-container {
+          border: 1px solid #f3f0fe;
+          border-radius: 12px;
+          background: #fefefe;
+
+          img {
+            width: 100%;
+            padding: 16px;
+          }
+        }
+
+        .product-price {
+          font-family: 'Helvetica';
+          font-weight: 400;
+          color: $color-blue;
+          margin: 10px 0;
+        }
+
+        .product-name {
+          color: #191919;
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .list-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .cart-container {
+    width: 25%;
+    height: fit-content;
+    padding: 30px;
+    background-color: $color-white;
+    border: 10px solid $color-blue;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    .cart-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #f4f4f4;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .item-info {
+        min-width: 50%;
+        .cart-item-price {
+          color: $color-blue;
+        }
+      }
+      .item-amount-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          color: $color-blue;
+        }
+
+        .item-amount {
+          font-weight: 700;
+          font-size: 15px;
+          display: flex;
+          width: 30px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+          background-color: $color-blue;
+          color: $color-white;
+        }
+      }
+    }
+
+    .cart-total {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      button {
+        color: $color-blue;
+        font-size: 14px;
+        font-weight: 600;
+        height: 51px;
+        margin-top: 20px;
+        width: 40%;
+      }
+    }
+  }
+}

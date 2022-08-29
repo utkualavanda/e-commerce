@@ -1,0 +1,62 @@
+.MuiPagination-root {
+  button {
+    font-size: 14px;
+    font-weight: 600;
+    color: #697488;
+    span {
+      z-index: -1;
+      border-radius: 0;
+    }
+  }
+  .Mui-selected {
+    color: $color-white;
+    span {
+      background-color: $color-blue;
+    }
+  }
+
+  .MuiPaginationItem-previousNext {
+    color: $color-blue;
+  }
+}
+
+.MuiFormControlLabel-root {
+  &[hidden] {
+    display: none;
+  }
+  span {
+    font-size: 14px;
+    color: #525252;
+  }
+
+  .MuiCheckbox-root {
+    color: #dfdee2;
+    &.Mui-checked {
+      color: $color-blue !important;
+    }
+  }
+
+  .MuiRadio-root {
+    span {
+      color: #dfdee2;
+    }
+
+    &.Mui-checked {
+      span {
+        color: $color-blue !important;
+      }
+    }
+  }
+}
+
+.MuiTextField-root {
+  .MuiFormLabel-root {
+    color: #a8a8a8 !important;
+  }
+  .MuiOutlinedInput-root {
+    fieldset {
+      border: 2px solid #e0e0e0 !important;
+      border-radius: 2px;
+    }
+  }
+}
