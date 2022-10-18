@@ -10,7 +10,7 @@
   />
 </a>
 
-<p>Developed by Osman Utku ALAVANDA.</p>j
+<p>Developed by Osman Utku ALAVANDA.</p>
 </div>
 
 <hr />
