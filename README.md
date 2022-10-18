@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Getir Assignment</h1>
+<h1>E-Commerce</h1>
 
 <a href="https://www.getir.com/">
   <img
@@ -10,7 +10,7 @@
   />
 </a>
 
-<p>A hiring case developed by Osman Utku ALAVANDA.</p>
+<p>Developed by Osman Utku ALAVANDA.</p>j
 </div>
 
 <hr />
